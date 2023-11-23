@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function okno_zamknij_Siwiec()
+                {
+                window.close()
+                }
+        </script>
+    </head>
+    <body>
+        HTML:<br>
+        <textarea rows="27" cols="100" style="overflow:hidden" readonly>
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function okno_zamknij_Siwiec()
+                {
+                window.close()
+                }
+        </script>
+    </head>
+    <body>
+        <font style="color: green; font-size: 45px;">
+            <script>
+                var D1_SIW = parseInt(prompt("Podaj pierwszy dzień: "));
+                var D2_SIW = parseInt(prompt("Podaj drugi dzień: "));
+                if (D1_SIW < 1 
+|| D1_SIW > 31 || 
+D2_SIW > D1_SIW || 
+D2_SIW > 31) {
+                    alert("Podane dni są niepoprawne.");
+                }else{
+                    var roznica = Math.abs((D2_SIW - D1_SIW) * 86400);
+                }
+                document.write("Różnica między tymi dniami wynosi: ", roznica, " sekund");
+            </script>
+        </font>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_Siwiec()"/>
+    </body>
+</html>
+        </textarea>
+        <br><br>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_Siwiec()"/>
+    </body>
+</html>
